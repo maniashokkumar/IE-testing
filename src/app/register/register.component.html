@@ -1,0 +1,60 @@
+
+<div class="sign">
+    <div class="signin">
+    <div class="grenconri">
+        <div class="formhead">
+        <div class="formtxt">
+          <p class="formtxt1">Join Space</p>
+          <p class="formtxt2">Hundreds of companies using Space to build their business.</p>
+         
+        </div>
+        <div class="formimg">
+          <img src="assets/chat.png" width="150px">
+    
+        </div>
+      </div>
+    
+      <div class="form">
+        <form>
+          <label>Your name</label><br><br>
+          <input #name id="name" placeholder="Type Your Name">
+          
+          <br><br>
+          <label>Your Email</label><br><br>
+          <input id="email" type="email" #email placeholder="example@site.com">
+          <br><br>
+          <label>Password</label>
+          <input placeholder="Password">
+         
+    
+          <br><br>
+          <input type="button"  class="button3" value="Create" (click)="create(name.value,email.value)">
+         
+        </form>
+        <h2 routerLink="login">Log In? &nbsp;<a href="#">Visit Our Help centre? &nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+      </div>
+        
+    
+         
+      </div>
+    </div>
+    
+    </div>
+
+
+    <p *ngFor="let msg of msgs">
+
+      {{msg}}
+ 
+ </p>
+ 
+ 
+ 
+ 
+ <h4>
+ 
+    <input type="text" name="r1"  #mymsg>
+ 
+     <button (click)=send(mymsg.value)>Rama </button>
+ 
+ </h4>

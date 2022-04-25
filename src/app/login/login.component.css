@@ -1,0 +1,29 @@
+.container{
+   
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+  
+    
+}
+input{
+   
+    border:1px solid #e5e8e8;
+    border-radius: 5px;
+    width: 475px;
+    height: 50px;
+}
+
+button{
+   
+    background-color: #008060;
+    border-radius: 5px;
+    border-color:#008060;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+.body{
+    
+    padding-left: 35%;
+    margin-top: 125px;
+}

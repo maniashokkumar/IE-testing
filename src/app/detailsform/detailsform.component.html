@@ -1,0 +1,29 @@
+<div class="body">
+  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Passenger Details</h2>
+  <p>(Please Save the PNR for Future Reference)</p>
+    <div class="form">
+        <div class="container">
+         <ul>
+          <li> Passenger Name :{{passanger  | uppercase}}</li>
+          <li> Boarding Point:{{boarding  | uppercase}}</li>
+          <li> Age :{{age}}</li>
+          <li> Gender :{{gender  | uppercase}}</li>
+          <li> Phone :{{phone}}</li>
+          <li> Total Amount :{{amount}}</li>
+          
+          <li>PNR :{{pnr}}</li>
+          <li *ngFor="let d of seatno">Selected Seat:{{d}}
+          </li>
+
+          
+           
+         </ul>
+        
+           
+
+     
+        
+        
+          </div>
+        </div>
+      </div>  

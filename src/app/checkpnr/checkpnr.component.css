@@ -1,0 +1,19 @@
+input{
+    width: 300px;
+    height: 40px;
+}
+.div{
+    text-align: center;
+    margin-top: 125px;
+}
+.btn{
+    background-color: rgba(49, 49, 209, 0.63);
+    border: 1px solid rgba(49, 49, 209, 0.63) ;
+}
+ul{
+    text-decoration: none;
+}
+.det{
+    margin-left: 200px;
+    margin-top: 50px;
+}

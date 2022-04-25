@@ -1,0 +1,127 @@
+
+<div class="con">
+    <div>
+            <h1>Select seat</h1>
+            <h3>From:Salem</h3>
+            <h3>To:Chennai</h3>
+    </div>
+   
+    <div class="con2">
+            <h1>Available Seat:{{remaining}}</h1>
+            <h3>Already Booked Seat:{{booklen}}</h3>
+          
+    </div>
+</div>
+
+<div class="container">
+    
+<div>
+<div class="seats ">
+        <input type="date" #date>
+   
+    
+   
+    <h1>Lower Berth</h1>
+    <div class="seat">
+        <button [title]="amt" id="1" value=1 #a (click)="select(a.value,a.id)">1</button>
+    </div>
+    <div class="seat">
+        <button value=2 #b id="2" [title]="amt"(click)="select(b.value,b.id)">2</button>
+    </div>
+    <div class="seat">
+        <button value=3 #c id="3" [title]="amt" (click)="select(c.value,c.id)">3</button>
+    </div>
+    <div class="seat">
+        <button value=4 #d id="4" [title]="amt" (click)="select(d.value,d.id)">4</button>
+    </div>
+    <div class="seat">
+        <button value=5 #e  id="5" [title]="amt" (click)="select(e.value,e.id)">5</button>
+    </div><br><br>
+    <div class="seat">
+        <button value=6 #f id="6" [title]="amt" (click)="select(f.value,f.id)">6</button>
+    </div>
+    <div class="seat">
+        <button value=7 #g id="7" [title]="amt" (click)="select(g.value,g.id)">7</button>
+    </div>
+    <div class="seat">
+        <button value=8 #h id="8" [title]="amt" (click)="select(h.value,h.id)">8</button>
+    </div>
+    <div class="seat">
+        <button value=9 #i id="9" [title]="amt" (click)="select(i.value,i.id)">9</button>
+    </div>
+    <div class="seat">
+        <button value=10 id="10"    #j [title]="amt" (click)="select(j.value,j.id)">10</button>
+    </div>
+
+</div>
+
+
+
+
+<div class="seats seats1">
+    <h1>Upper Berth</h1>
+    <div  class="seat">
+        <button value=11 #k [title]="amt1"  id="11"(click)="select(k.value,k.id)">11</button>
+    </div>
+    <div class="seat">
+        <button value=12 #l [title]="amt1" id="12"(click)="select(l.value,l.id)">12</button>
+    </div>
+    <div class="seat">
+        <button value=13 #m [title]="amt1" id="13"(click)="select(m.value,m.id)">13</button>
+    </div>
+    <div class="seat">
+        <button value=14 #n [title]="amt1" id="14"(click)="select(n.value,n.id)">14</button>
+    </div>
+    <div class="seat">
+        <button value=15 #o [title]="amt1" id="15"(click)="select(o.value,o.id)">15</button>
+    </div><br><br>
+    <div class="seat">
+         <button value=16 #p [title]="amt1" id="16"(click)="select(p.value,p.id)">16</button>
+    </div>
+    <div class="seat">
+        <button value=17 #q [title]="amt1" id="17"(click)="select(q.value,q.id)">17</button>
+    </div>
+    <div class="seat">
+        <button value=18 #r [title]="amt1" id="18" (click)="select(r.value,r.id)">18</button>
+    </div>
+    <div class="seat">
+        <button value=19 #s [title]="amt1" id="19" (click)="select(s.value,s.id)">19</button>
+    </div>
+    <div class="seat">
+        <button value=20 #t [title]="amt1" id="20" (click)="select(t.value,t.id)">20</button>
+    </div>
+
+</div></div>
+
+
+<div class="form" *ngIf="display" >
+    <br>
+    <label>Boarding Point</label><br><BR>
+    <select #bordingpoint>
+        <option disabled>Boarding Point</option>
+        <option>Tambaram</option>
+        <option>koyembedu</option>
+    </select><BR>
+    <br><input placeholder="Enter Passenger Name:" #passenger><br>
+    <br><input placeholder="Age:" #age><br>
+    <br><select #gender>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+    </select>
+    <br>
+    <br><input placeholder="Phone Number:" #phone>
+    <br><br>
+    <input placeholder="Total Amount" readonly #amt [value]="total_amt | currency:'INR'"><br><br>
+    
+
+    <button  class="but" (click)="book(passenger.value,bordingpoint.value,age.value,phone.value,gender.value,amt.value,date.value)">Book ticket</button>
+
+</div>
+
+
+</div>
+
+
+
+

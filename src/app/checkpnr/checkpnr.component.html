@@ -1,0 +1,24 @@
+<div class="div">
+<input #pnr placeholder="Enter your PNR+DATE(EX:99999999998)"><br><br>
+<input type="date" #doj1><br><br>
+<input class="btn" type="button" value="Submit" (click)=check(pnr.value,doj1.value)>
+</div>
+
+<div class="det">
+    <ul>
+        <li> Passenger Name :{{passanger  | uppercase}}</li>
+        <li> Boarding Point:{{boarding  | uppercase}}</li>
+        <li> Date of Journey: {{doj |date:"dd/MM/yyyy"}}</li>
+        <li> Age :{{age}}</li>
+        <li> Gender :{{gender  | uppercase}}</li>
+        <li> Phone :{{phone}}</li>
+        <li> Total Amount :{{amount | currency:"INR"}}</li>
+        
+        <li>PNR :{{pnr }}</li>
+        <li >Selected Seat:{{d}}
+        </li>
+       </ul>
+     
+</div>
+
+<button (click)="cancel(pnr.value,doj1.value)">Cancel</button>

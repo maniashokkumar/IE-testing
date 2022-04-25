@@ -1,0 +1,68 @@
+
+.topnav img{
+    margin-left: 150px;
+   float: left;
+   margin-top: 15px;
+}
+.topnavlft{
+    
+    margin-right: 150px;
+  
+    
+    float: right;
+
+}
+.topnavlft li{
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 30px;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.button1{
+    height: 45px;
+    width: 115px;
+    background-color: #008060;
+    border-radius: 5px;
+    border-color:#008060;
+    color: white;
+    font-size: 18px;
+}
+.button1 i{
+    vertical-align: middle;
+}
+.button1:hover{
+    box-shadow: 0 0 5px #008060;
+}
+.button2{
+    height: 45px;
+width: 80px;
+    background-color:white;
+    border-radius: 5px;
+    border: none;
+    color:black;
+    font-size: 18px;
+}
+.button2:hover{
+  
+    background-color: rgba(0,128,96,.1);
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.clear{
+    clear: both;
+}
+
+.dropdown-menu{
+  width: min-content;
+}
+
+.dropdown-item{
+    width: 20PX;
+}
+   
